@@ -17,19 +17,18 @@ class NotificationsPage extends StatelessWidget {
             'Notifications',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              color: Colors.black,
               fontSize: 24,
             ),
           ),
         ),
-        const SizedBox(height: 10), // لتقليل المسافة بين العنوان والقائمة
+        const SizedBox(height: 10), 
         Expanded(
           child: ListView.builder(
-            padding: EdgeInsets.zero, // إزالة أي padding إضافي في ListView
+            padding: EdgeInsets.zero,
             itemCount: notifications.length,
             itemBuilder: (context, index) {
               return Padding(
-                padding: const EdgeInsets.symmetric(vertical: 4.0), // تقليل المسافات بين العناصر
+                padding: const EdgeInsets.symmetric(vertical: 4.0),
                 child: NotificationTile(model: notifications[index]),
               );
             },

@@ -14,10 +14,13 @@ class CardWidget extends StatelessWidget {
       elevation: 5,
       child: Column(
         children: [
-          Expanded(
-            child: Image.network(
-              shoe.imageUrl,
-              fit: BoxFit.fill,
+          ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: Expanded(
+              child: Image.network(
+                shoe.imageUrl,
+                fit: BoxFit.fill,
+              ),
             ),
           ),
           const SizedBox(height: 5),

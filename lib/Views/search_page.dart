@@ -34,7 +34,7 @@ class SearchPage extends StatelessWidget {
               crossAxisCount: 2,
               crossAxisSpacing: 8,
               mainAxisSpacing: 8,
-              childAspectRatio: 0.75,
+              childAspectRatio: 0.73,
             ),
             itemBuilder: (context, index) {
               return CardWidget(shoe: shoes[index]);

@@ -13,15 +13,15 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       body: pages[currentIndex],
       bottomNavigationBar: Stack(
         children: [
           BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.black,
             currentIndex: currentIndex,
-            selectedItemColor: Colors.black,
+            selectedItemColor: Colors.white,
             unselectedItemColor: Colors.grey,
             showSelectedLabels: false,
             showUnselectedLabels: false,
@@ -55,7 +55,6 @@ class _HomeViewState extends State<HomeView> {
                       child: Text(
                         '${notifications.length}',
                         style: const TextStyle(
-                          color: Colors.white,
                           fontSize: 10,
                           fontWeight: FontWeight.bold,
                         ),

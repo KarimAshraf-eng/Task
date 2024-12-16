@@ -52,7 +52,6 @@ class NotificationTile extends StatelessWidget {
                               style: const TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 16,
-                                color: Colors.black,
                               ),
                             ),
                             Text(
@@ -71,7 +70,7 @@ class NotificationTile extends StatelessWidget {
                         width: 275,
                         child: Text(
                           model.description,
-                          style: const TextStyle(color: Colors.black, fontSize: 10),
+                          style: const TextStyle(fontSize: 10),
                         ),
                       ),
                     ],
